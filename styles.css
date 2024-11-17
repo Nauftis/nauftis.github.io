@@ -20,7 +20,7 @@ body {
 .logo {
     font-size: 24px;
     font-weight: bold;
-    color: #3B82F6;
+    color: #ab98ff;
 }
 
 .nav-links {
@@ -39,74 +39,63 @@ body {
 }
 
 .nav-links a:hover {
-    color: #3B82F6;
+    color: #ab98ff;
 }
 
 /* Hero Section */
 .hero {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding: 100px;
     gap: 50px;
-    flex-wrap: nowrap; /* Ensure side-by-side layout on desktop */
+    flex-wrap: nowrap;
+    /* Ensure side-by-side layout on desktop */
 }
 
 .hero-text {
-    max-width: 50%; /* Restrict width for proper alignment */
+    max-width: 50vw;
+    /* Restrict width for proper alignment */
 }
 
 .hero-text h1 {
+    display: flex;
+    justify-content: center;
     font-size: 48px;
     margin-bottom: 10px;
-    color: #F9FAFB;
+    color: #ab98ff;
 }
 
 .subtext {
+    text-align: center;
+    max-width: 35vw;
     font-size: 18px;
     color: #9CA3AF;
     margin-bottom: 20px;
-}
 
-.btn-primary {
-    background-color: #3B82F6;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 18px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.btn-primary:hover {
-    background-color: #2563EB;
-}
-
-.hero-image {
-    max-width: 40%; /* Restrict image size for balance */
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        a {
+            color: #9CA3AF;
+        }
+        a:hover {
+            color: #ab98ff;
+        } 
+        
 }
 
 /* Media Queries */
 @media (max-width: 1024px) {
     .hero {
-        flex-wrap: wrap; /* Switch to wrapping for smaller screens */
-        text-align: center; /* Center text for better layout */
+        flex-wrap: wrap;
+        /* Switch to wrapping for smaller screens */
+        text-align: center;
+        /* Center text for better layout */
         padding: 50px;
     }
 
     .hero-text {
         max-width: 100%;
-        order: 2; /* Place text below the image */
-    }
-
-    .hero-image {
-        max-width: 80%;
-        margin-bottom: 20px;
-        order: 1; /* Place image above text */
+        order: 2;
+        /* Place text below the image */
     }
 }
 
@@ -118,25 +107,11 @@ body {
     .hero-text h1 {
         font-size: 32px;
     }
-
-    .btn-primary {
-        padding: 8px 16px;
-        font-size: 16px;
-    }
 }
 
 @media (max-width: 480px) {
     .hero-text h1 {
         font-size: 24px;
-    }
-
-    .btn-primary {
-        padding: 8px 16px;
-        font-size: 16px;
-    }
-
-    .hero-image {
-        max-width: 100%;
     }
 }
 
@@ -151,7 +126,7 @@ body {
 .projects h2 {
     font-size: 36px;
     margin-bottom: 40px;
-    color: #3B82F6;
+    color: #ab98ff;
 }
 
 .project-container {
@@ -163,16 +138,18 @@ body {
 
 .project-card {
     text-align: center;
-    flex: 1 1 calc(33.33% - 20px); /* Three items per row */
+    flex: 1 1 calc(33.33% - 20px);
+    /* Three items per row */
     max-width: 200px;
-    
+    text-decoration: none;
+
     a:visited {
         color: #9CA3AF;
-      }
+        text-decoration: none;
+    }
 }
 
 .project-box {
-    background-color: #3B82F6;
     border-radius: 10px;
     width: 150px;
     height: 150px;
@@ -219,7 +196,8 @@ body {
     }
 
     .project-card {
-        flex: 1 1 calc(50% - 20px); /* Two items per row */
+        flex: 1 1 calc(50% - 20px);
+        /* Two items per row */
     }
 }
 
@@ -248,7 +226,8 @@ body {
     }
 
     .project-card {
-        flex: 1 1 100%; /* One item per row */
+        flex: 1 1 100%;
+        /* One item per row */
     }
 
     .project-box {
@@ -262,11 +241,6 @@ body {
         font-size: 24px;
     }
 
-    .btn-primary {
-        padding: 8px 16px;
-        font-size: 16px;
-    }
-
     .project-box {
         width: 100px;
         height: 100px;
@@ -276,4 +250,3 @@ body {
         padding: 30px;
     }
 }
-
